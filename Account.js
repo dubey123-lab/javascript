@@ -1,3 +1,6 @@
+var initialDeposite;
+var new_bal;
+var bal;
 class Account{
     
    
@@ -5,22 +8,22 @@ class Account{
        this.initialDeposite = initialDeposite; 
     }
 
+
+    display(bal){
+        console.log("The Balance is :-" + bal)
+        return bal;
+    }
+
     deposite(amount){
-        var new_bal  = this.initialDeposite + amount;
-        console.log(new_bal);
+         new_bal  = this.initialDeposite + amount;
+         console.log(new_bal);   
     }
     
    
     widhraw(amount){
-        var bal = this.new_bal - amount;
+         bal = new_bal - amount;
          console.log(bal);
-        
-     }
-
-     
-
-     
-   
+     }  
 }
 
 class Saving_account extends Account{
@@ -36,7 +39,12 @@ class Saving_account extends Account{
     }
 
     widhraw_saving_acc(amount){
+        if(amount<=0){
+            console.log("Insufficient Balance");
+        }
+        else{
         super.widhraw(amount);
+        }
         
     }
     
