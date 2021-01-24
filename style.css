@@ -1,0 +1,48 @@
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+ .navbar li{
+    float: left;
+}
+
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+
+.navbar a:hover:not(.active){
+    background-color: white;
+    color:black;
+}
+
+.active{
+    background-color: green;
+}
+
+.team_img{
+    margin-top: 25px;
+    float: left;
+    height: 500px;
+    width: 180px;
+    margin-left: 120px;
+    
+}
+.team_img img{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+}
+.team_img .desc{
+    padding: 15px;
+    text-align: center;
+}
+
